@@ -6,6 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/redwood
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/redwood/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/redwood/proprietary/system_ext/etc/camerabooster.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camerabooster.json \
+    vendor/xiaomi/redwood/proprietary/system_ext/etc/camerascene.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camerascene.json \
+    vendor/xiaomi/redwood/proprietary/system_ext/lib64/libmicampostproc_client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmicampostproc_client.so \
     vendor/xiaomi/redwood/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/redwood/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/xiaomi/redwood/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
