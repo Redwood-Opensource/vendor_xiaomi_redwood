@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/xiaomi/redwood",
         "hardware/qcom-caf/sm8350",
         "hardware/xiaomi",
         "vendor/qcom/opensource/display",
@@ -5910,6 +5911,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/camera.qcom.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -6046,6 +6048,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/com.qti.chi.override.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -10382,34 +10385,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.camera.common@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.fx.tunnel@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so",
-            ],
-            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
