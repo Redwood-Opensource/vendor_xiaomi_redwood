@@ -9399,6 +9399,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsensor_cal_v2.so",
             ],
             shared_libs: [
+                "libjsoncpp_shim",
                 "liblog",
                 "libhardware",
                 "libutils",
