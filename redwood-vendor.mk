@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/redwood
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/redwood/proprietary/system/etc/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/camerax-vendor-extensions.xml \
     vendor/xiaomi/redwood/proprietary/vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb \
     vendor/xiaomi/redwood/proprietary/vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_Codec_cal.acdb \
     vendor/xiaomi/redwood/proprietary/vendor/etc/acdbdata/Forte/Forte_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Forte/Forte_General_cal.acdb \
@@ -415,6 +416,7 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix.default \
     lib3rdpartcontext \
     libAF \
+    libI420colorconvert \
     libSNPE \
     libXMFaceFocus \
     libaidenoiser \
@@ -471,9 +473,11 @@ PRODUCT_PACKAGES += \
     libgoodixhwfingerprint \
     libhdrdynamic \
     libhdrdynamicootf \
+    libhta \
     libipebpsstriping \
     libipebpsstriping170 \
     libjpege \
+    libloadalgo_stub \
     libmctfengine_stub \
     libmiStereoFactoryRemapBasicLib \
     libmiai_portraitsupernight \
@@ -539,6 +543,13 @@ PRODUCT_PACKAGES += \
     libvideoBokeh \
     libvideofilter_only \
     libvidhance \
+    libvidhance_active_ois \
+    libvidhance_dmbr \
+    libvidhance_face_stabilizer \
+    libvidhance_horizon_correction \
+    libvidhance_ldc \
+    libvidhance_stabilizer \
+    libvidhance_super_stabilization \
     libwa_depth \
     libwa_refocus \
     sensors.mius.proximity \
@@ -587,7 +598,11 @@ PRODUCT_PACKAGES += \
     misound_karaokemix_res \
     misound_res_headphone \
     misound_res_spk \
+    camerax-vendor-extensions \
     batterysecret \
     init.qcom.sensors \
     sensors.qti \
     sscrpcd
+
+PRODUCT_BOOT_JARS += \
+    camerax-vendor-extensions

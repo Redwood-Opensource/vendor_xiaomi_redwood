@@ -6208,6 +6208,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libI420colorconvert",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libI420colorconvert.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "libmm-color-convertor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libSNPE",
     owner: "xiaomi",
     strip: {
@@ -7942,6 +7969,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhta",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhta.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libipebpsstriping",
     owner: "xiaomi",
     strip: {
@@ -8089,6 +8141,31 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapper@4.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libcdsprpc",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libloadalgo_stub",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libloadalgo_stub.so",
+            ],
+            shared_libs: [
+                "libcdsprpc",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -10113,6 +10190,209 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvidhance_active_ois",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_active_ois.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_dmbr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_dmbr.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_face_stabilizer",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_face_stabilizer.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_horizon_correction",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_horizon_correction.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_ldc",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_ldc.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_stabilizer",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_stabilizer.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvidhance_super_stabilization",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvidhance_super_stabilization.so",
+            ],
+            shared_libs: [
+                "libvidhance",
+                "libdl",
+                "libm",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libGLESv2",
+                "libc++",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwa_depth",
     owner: "xiaomi",
     strip: {
@@ -10761,6 +11041,14 @@ prebuilt_rfsa {
     src: "proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin",
     relative_install_path: "adsp",
     soc_specific: true,
+}
+
+dex_import {
+    name: "camerax-vendor-extensions",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system/framework/camerax-vendor-extensions.jar",
+    ],
 }
 
 cc_prebuilt_binary {
